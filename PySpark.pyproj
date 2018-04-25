@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>7429dc60-9b87-45e3-bb82-8edae66b6e14</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>PySpark.py</StartupFile>
+    <SearchPath>..\..\spark\bin\;..\..\spark\python\;..\..\spark\python\lib\py4j-0.10.4-src.zip</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PySpark</Name>
+    <RootNamespace>PySpark</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <InterpreterId>Global|ContinuumAnalytics|Anaconda36-64</InterpreterId>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>localhost 9999</CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="accumulator.py" />
+    <Compile Include="dbscan2\aggregator.py" />
+    <Compile Include="dbscan2\benchmark.py" />
+    <Compile Include="dbscan2\dbscan.py" />
+    <Compile Include="dbscan2\geometry.py" />
+    <Compile Include="dbscan_final\dbSparkFinalClass.py" />
+    <Compile Include="dbscan_spark\mlp.py" />
+    <Compile Include="exam\exam1.py" />
+    <Compile Include="exam\exam2.py" />
+    <Compile Include="LectureNote\partition.py" />
+    <Compile Include="dbscan\cluster.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dbscan\dbscanner.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dbscan\dbscan_direct.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dbscan_final\dbSparkFinal.py" />
+    <Compile Include="dbscan_spark\dbscanner.scala" />
+    <Compile Include="dbscan_spark\dbSpark.py" />
+    <Compile Include="dbscan_spark\dbSparkClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LectureNote\dc.py" />
+    <Compile Include="LectureNote\grpah.py" />
+    <Compile Include="LectureNote\mllib.py" />
+    <Compile Include="LectureNote\SparkSQL.py" />
+    <Compile Include="LectureNote\PMI-SQL.py" />
+    <Compile Include="LectureNote\stream.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LectureNote\wordcount2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MachineLearning\msbd5012NN.py" />
+    <Compile Include="MachineLearning\msbd5012_plotData.py" />
+    <Compile Include="MachineLearning\msbd5012_logReg.py" />
+    <Compile Include="MachineLearning\Theano\convolutional_mlp - Copy.py" />
+    <Compile Include="MachineLearning\Theano\convolutional_mlp.py" />
+    <Compile Include="MachineLearning\Theano\logistic_sgd.py" />
+    <Compile Include="MachineLearning\Theano\mlp.py" />
+    <Compile Include="MachineLearning\Theano\mlp2.py" />
+    <Compile Include="MachineLearning\Theano\mlp2_modified.py" />
+    <Compile Include="MachineLearning\train.py" />
+    <Compile Include="MachineLearning\test.py" />
+    <Compile Include="MachineLearning\reinforcementLearning.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LectureNote\SimpleApp.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="partition.py" />
+    <Compile Include="partition_bad.py" />
+    <Compile Include="PMI.py" />
+    <Compile Include="primeNumber.py" />
+    <Compile Include="PyFilePageRank.py" />
+    <Compile Include="PyFileProcess.py" />
+    <Compile Include="PySpark.py" />
+    <Compile Include="PythonApplication1.py" />
+    <Compile Include="quiz\quiz2.py" />
+    <Compile Include="quiz\quiz3.py" />
+    <Compile Include="quiz\quiz3_pagerank.py" />
+    <Compile Include="quiz\quiz4.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sparksql.py" />
+    <Compile Include="thread.py" />
+    <Compile Include="LectureNote\wordcount.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dbscan2\.gitignore" />
+    <Content Include="dbscan2\benchmark.sh" />
+    <Content Include="dbscan2\plots\mean_var_split\animated_partitions.gif" />
+    <Content Include="dbscan2\plots\mean_var_split\clusters.png" />
+    <Content Include="dbscan2\plots\mean_var_split\clusters_partitions.png" />
+    <Content Include="dbscan2\plots\mean_var_split\partitioning.png" />
+    <Content Include="dbscan2\plots\mean_var_split\partition_0.png" />
+    <Content Include="dbscan2\plots\mean_var_split\partition_1.png" />
+    <Content Include="dbscan2\plots\mean_var_split\partition_10.png" />
+    <Content Include="dbscan2\plots\mean_var_split\partition_11.png" />
+    <Content Include="dbscan2\plots\mean_var_split\partition_12.png" />
+    <Content Include="dbscan2\plots\mean_var_split\partition_13.png" />
+    <Content Include="dbscan2\plots\mean_var_split\partition_14.png" />
+    <Content Include="dbscan2\plots\mean_var_split\partition_15.png" />
+    <Content Include="dbscan2\plots\mean_var_split\partition_2.png" />
+    <Content Include="dbscan2\plots\mean_var_split\partition_3.png" />
+    <Content Include="dbscan2\plots\mean_var_split\partition_4.png" />
+    <Content Include="dbscan2\plots\mean_var_split\partition_5.png" />
+    <Content Include="dbscan2\plots\mean_var_split\partition_6.png" />
+    <Content Include="dbscan2\plots\mean_var_split\partition_7.png" />
+    <Content Include="dbscan2\plots\mean_var_split\partition_8.png" />
+    <Content Include="dbscan2\plots\mean_var_split\partition_9.png" />
+    <Content Include="dbscan2\plots\mean_var_split\toy_data.png" />
+    <Content Include="dbscan2\plots\median_search_split\clusters.png" />
+    <Content Include="dbscan2\plots\median_search_split\clusters_partitions.png" />
+    <Content Include="dbscan2\plots\median_search_split\dbscan_animated.gif" />
+    <Content Include="dbscan2\plots\median_search_split\partitioning.png" />
+    <Content Include="dbscan2\plots\median_search_split\partition_0.png" />
+    <Content Include="dbscan2\plots\median_search_split\partition_1.png" />
+    <Content Include="dbscan2\plots\median_search_split\partition_10.png" />
+    <Content Include="dbscan2\plots\median_search_split\partition_11.png" />
+    <Content Include="dbscan2\plots\median_search_split\partition_12.png" />
+    <Content Include="dbscan2\plots\median_search_split\partition_13.png" />
+    <Content Include="dbscan2\plots\median_search_split\partition_14.png" />
+    <Content Include="dbscan2\plots\median_search_split\partition_15.png" />
+    <Content Include="dbscan2\plots\median_search_split\partition_2.png" />
+    <Content Include="dbscan2\plots\median_search_split\partition_3.png" />
+    <Content Include="dbscan2\plots\median_search_split\partition_4.png" />
+    <Content Include="dbscan2\plots\median_search_split\partition_5.png" />
+    <Content Include="dbscan2\plots\median_search_split\partition_6.png" />
+    <Content Include="dbscan2\plots\median_search_split\partition_7.png" />
+    <Content Include="dbscan2\plots\median_search_split\partition_8.png" />
+    <Content Include="dbscan2\plots\median_search_split\partition_9.png" />
+    <Content Include="dbscan2\plots\median_search_split\toy_data.png" />
+    <Content Include="dbscan2\README.md" />
+    <Content Include="exam\a.txt" />
+    <Content Include="exam\adj_noun_pairs.txt" />
+    <Content Include="exam\Customer.csv" />
+    <Content Include="exam\Product.csv" />
+    <Content Include="exam\SalesOrderDetail.csv" />
+    <Content Include="exam\SalesOrderHeader.csv" />
+    <Content Include="inputData.csv" />
+    <Content Include="dbscan\config.txt" />
+    <Content Include="dbscan\europe_big.txt" />
+    <Content Include="dbscan\europe_2k.txt" />
+    <Content Include="dbscan\europe_half.txt" />
+    <Content Include="dbscan\MedDemo2.txt" />
+    <Content Include="dbscan\LongDemo.txt" />
+    <Content Include="dbscan\MedDemo.txt" />
+    <Content Include="dbscan_spark\abc.csv" />
+    <Content Include="LectureNote\SalesOrderHeader.csv" />
+    <Content Include="LectureNote\SalesOrderDetail.csv" />
+    <Content Include="LectureNote\Product.csv" />
+    <Content Include="LectureNote\Customer.csv" />
+    <Content Include="LectureNote\building.csv" />
+    <Content Include="LectureNote\adj_noun_pairs.txt" />
+    <Content Include="MachineLearning\DS2.libsvm" />
+    <Content Include="MachineLearning\DS3.libsvm" />
+    <Content Include="pagerank_data.txt" />
+    <Content Include="quiz\adj_noun_pairs.txt" />
+    <Content Include="TestData.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="dbscan2\plots\" />
+    <Folder Include="dbscan2\plots\mean_var_split\" />
+    <Folder Include="dbscan2\plots\median_search_split\" />
+    <Folder Include="LectureNote\" />
+    <Folder Include="dbscan\" />
+    <Folder Include="dbscan_spark\" />
+    <Folder Include="dbscan2\" />
+    <Folder Include="dbscan_final\" />
+    <Folder Include="MachineLearning\" />
+    <Folder Include="MachineLearning\Theano\" />
+    <Folder Include="MSBD5003\" />
+    <Folder Include="exam\" />
+    <Folder Include="sparkstreaming\" />
+    <Folder Include="project\" />
+    <Folder Include="quiz\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda36-64" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
