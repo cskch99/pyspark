@@ -4,6 +4,7 @@
  #ok I add a line
 from pyspark import SparkContext
 sc = SparkContext()
+# this is another feature
 
 lines = sc.textFile('wasb://cluster@msbd.blob.core.windows.net/data/adj_noun_pairs.txt', sc.defaultParallelism)
 
