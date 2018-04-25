@@ -6,7 +6,7 @@
     <ProjectGuid>7429dc60-9b87-45e3-bb82-8edae66b6e14</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <StartupFile>PySpark.py</StartupFile>
-    <SearchPath>..\..\..\..\spark\bin\;..\..\..\..\spark\python\;..\..\..\..\spark\python\lib\py4j-0.10.4-src.zip</SearchPath>
+    <SearchPath>..\..\spark\bin\;..\..\spark\python\;..\..\spark\python\lib\py4j-0.10.4-src.zip</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>PySpark</Name>
